@@ -1,0 +1,12 @@
+{% include "header.html" %}
+<div class="item">
+  <h2 class="inline">{{items.name}}</h2>
+  <h3 class="inline"><a href = "{{url_for('showCategories', categories_id=categories.id)}}" >-{{categories.name}}</a></h3>
+  </br>
+  <h3 class="description">{{items.description}}</h3>
+  </br>
+  <a class="btn" href = "{{url_for('editItem', categories_id=categories.id, items_id=items.id)}}" >Edit</a>
+  <a class="btn" href = "{{url_for('deleteItem', categories_id=categories.id, items_id=items.id)}}" >Delete</a>
+</div>
+</body>
+</html>
