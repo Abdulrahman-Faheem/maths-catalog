@@ -269,4 +269,4 @@ item5 = Items(
 session.add(item5)
 session.commit()
 
-print "Items have been added"
+#print "Items have been added"
